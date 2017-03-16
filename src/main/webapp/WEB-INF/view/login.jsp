@@ -2,6 +2,7 @@
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 
+<div ng-app = "loginController">
 		<div class = "container-wrapper">
 				
 				<div class = "container">
@@ -52,7 +53,7 @@
 		
 		</div>
 
-
+</div>
 
 
 <%@include file="/WEB-INF/view/template/footer.jsp"%>

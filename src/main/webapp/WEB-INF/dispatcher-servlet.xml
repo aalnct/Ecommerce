@@ -12,8 +12,16 @@
 
     <context:component-scan base-package="com.springdemo.controller"/>
     <context:component-scan base-package="com.spring.emusic"/>
+    <context:component-scan base-package="com.application.module.authentication"/>
+    
 
     <mvc:annotation-driven/>
+    
+    <!-- Support autowire -->
+    
+    <bean id = "productDao" class = "com.spring.emusic.dao.impl.ProductDAOImpl"></bean>
+    <bean id = "jwtUserDetailService" class = "com.application.module.authentication.serviceimpl.JwtUserDetailsServiceImpl"></bean>
+    
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>
